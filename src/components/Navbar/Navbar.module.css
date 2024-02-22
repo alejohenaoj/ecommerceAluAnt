@@ -1,9 +1,30 @@
 .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 1rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.prueba{
-    color: crimson;
+.header img{
+  height: 3rem;
+}
+
+nav .navItem{
+  margin-left: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: rgb(166, 206, 57);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: rgb(87, 87, 86);
+}
+
+nav .navItem:hover{
+  background-color: rgb(87, 87, 86);
+  color: rgb(166, 206, 57);
+}
+
+nav .navItem:active{
+  background-color: rgb(166, 206, 57);
+  color: rgb(87, 87, 86);
 }

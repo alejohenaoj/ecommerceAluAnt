@@ -1,10 +1,11 @@
-import Navbar  from "./components/Navbar/Navbar"
+import Navbar  from "./components/Navbar/Navbar";
+import ItemListContainer from "./components/itemListContainer/ItemListContainer"
 
 function App() {
   return (
     <>
-      <h1>Ecommerce</h1>
       < Navbar />
+      < ItemListContainer greeting= 'Bienvenidos a la tienda de Aluminios Antioquia' />
     </>
   )
 }
