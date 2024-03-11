@@ -1,0 +1,20 @@
+.botonCarrito{
+  width: 4rem;
+  height: 2rem;
+  border-radius: 5rem;
+  background-color: rgb(166, 206, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.botonCarrito img{
+  height: 1.5rem;
+}
+
+.botonCarrito .countCarrito{
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  color: rgb(87, 87, 86);
+}

@@ -1,0 +1,45 @@
+.productContainer{
+  margin-bottom: 2rem;
+  border: solid 0.5px rgb(190, 190, 190);
+  border-radius: 0.5rem;
+  width: 20rem;
+}
+
+.productContainer img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.infoProduct{
+  background-color: rgb(166, 206, 57);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.infoProduct .nameProduct{
+  color: rgb(0, 82, 61);
+  font-size: 1.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.infoProduct .priceProduct{
+  color: rgb(0, 82, 61);
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.infoProduct  .categoryProduct{
+  color: rgb(0, 82, 61);
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.infoProduct  .detailProduct{
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: rgb(0, 82, 61);
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}

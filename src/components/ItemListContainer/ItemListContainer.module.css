@@ -1,6 +1,16 @@
 .tituloH1{
-    padding: 6rem;
+    padding: 1.5rem 0;
     text-align: center;
     background-color: rgb(166, 206, 57);
     color: rgb(0, 82, 61);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.contenedorCards{
+    border: solid 1px blueviolet;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
