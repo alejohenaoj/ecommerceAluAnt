@@ -15,6 +15,9 @@ const ItemDetailContainer = () => {
       .then(result => {
         setProduct(result)
       })
+      .catch(error => {
+        console.log(error)
+      })
   }, [itemId])
 
   return(
