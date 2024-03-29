@@ -1,19 +1,52 @@
-import LogoNavBar from './assets/logotipo_aluant_horizontal.webp'
 import classes from "./Navbar.module.css"
 import CartWidget from "../CartWidget/CartWidget"
-import { Link } from 'react-router-dom'
+import LogoNavBar from './assets/logotipo_aluant_horizontal.webp'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { db } from "../../services/firebase/firebaseConfig"
+import { collection, getDocs, orderBy, query, limit } from "firebase/firestore"
 
 const Navbar = () => {
+
+  const [categories, setCategories] = useState([])
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+
+    const categoriesCollection = query(collection(db, 'categories'), orderBy('order'), limit(3))
+
+    getDocs(categoriesCollection)
+      .then(QuerySnapshot => {
+        const categoriesAdapted = QuerySnapshot.docs.map(doc => {
+
+          const data = doc.data()
+
+          return { id: doc.id, ...data }
+
+        })
+
+        setCategories(categoriesAdapted)
+
+      })
+
+      .catch(error => {
+        console.error('error')
+      })
+
+  }, [])
 
   return (
     <header className={classes.header}>
 
-      <img src={LogoNavBar} alt="logotipo aluminios antioquia" />
+      <img onClick={() => navigate('/')} src={LogoNavBar} alt="logotipo aluminios antioquia" />
 
       <nav>
-        <Link to='/category/Aluminio Fundido' className={classes.navItem}> Aluminio Fundido </Link>
-        <Link to='/category/Madera' className={classes.navItem}> Madera </Link>
-        <Link to='/category/Aluminio Repujado' className={classes.navItem}> Aluminio Repujado </Link>
+        {
+          categories.map(cat => {
+            return <Link className={classes.navItem} key={cat.id} to={`/category/${cat.slug}`}> { cat.name } </Link>
+          })
+        }
       </nav>
 
       < CartWidget />

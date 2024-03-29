@@ -1,0 +1,45 @@
+.contenedorFormulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario{
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorText{
+  margin-top: 2rem;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #bbb;
+}
+
+.contenedorLabel{
+  color: rgb(0, 82, 61);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.botonCrear{
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: rgb(166, 206, 57);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  color: rgb(0, 82, 61);
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.botonCrear:hover{
+  background-color: rgb(0, 82, 61);
+  color: rgb(166, 206, 57);
+}

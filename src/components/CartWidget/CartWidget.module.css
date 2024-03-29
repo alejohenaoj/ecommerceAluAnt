@@ -13,8 +13,9 @@
   height: 1.5rem;
 }
 
-.botonCarrito .countCarrito{
+.countCarrito{
   font-size: 0.8rem;
   padding-left: 0.5rem;
-  color: rgb(87, 87, 86);
+  color: rgb(0, 82, 61);
+  font-family: Helvetica, Arial, sans-serif;
 }

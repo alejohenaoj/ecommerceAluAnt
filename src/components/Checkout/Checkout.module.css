@@ -1,12 +1,14 @@
+.contenedorFormulario{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .tituloH1{
   padding: 1.5rem 0;
   text-align: center;
   background-color: rgb(166, 206, 57);
   color: rgb(0, 82, 61);
   font-family: Helvetica, Arial, sans-serif;
-}
-
-.contenedorItems{
-  margin: 0 auto;
-  width: 80%;
 }

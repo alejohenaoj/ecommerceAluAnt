@@ -1,9 +1,14 @@
-import { Link } from "react-router-dom"
 import classes from "./Item.module.css"
+import { Link } from "react-router-dom"
 
 const Item = ({category, img, imgDescription, name, price, id}) => {
+
+  const handleClick = (e) => {
+    e.stopPropagation()
+  }
+
   return(
-    <article className={classes.productContainer}>
+    <article onClick={handleClick} className={classes.productContainer}>
       <img src={img} alt={imgDescription} />
       <div className={classes.infoProduct}>
         <h2 className={classes.nameProduct}> {name} </h2>

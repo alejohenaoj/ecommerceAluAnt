@@ -1,0 +1,11 @@
+.contenedorTexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    padding: 0 0.2rem;
+    color: rgb(0, 82, 61);
+    font-family: Helvetica, Arial, sans-serif;
+}

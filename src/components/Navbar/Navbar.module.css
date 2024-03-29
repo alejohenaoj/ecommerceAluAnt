@@ -8,9 +8,10 @@
 
 .header img{
   height: 3rem;
+  cursor: pointer;
 }
 
-nav .navItem{
+.navItem{
   margin-left: 1rem;
   padding: 0.5rem 1.2rem;
   background-color: rgb(166, 206, 57);
@@ -20,12 +21,12 @@ nav .navItem{
   font-family: Helvetica, Arial, sans-serif;
 }
 
-nav .navItem:hover{
+.navItem:hover{
   background-color: rgb(87, 87, 86);
   color: rgb(166, 206, 57);
 }
 
-nav .navItem:active{
+.navItem:active{
   background-color: rgb(166, 206, 57);
   color: rgb(87, 87, 86);
 }

@@ -1,0 +1,72 @@
+.tituloH1{
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: rgb(166, 206, 57);
+  color: rgb(0, 82, 61);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.contenedorItemsCarrito{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorListaCarrito{
+  margin: 0.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.itemName{
+  color: rgb(0, 82, 61);
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 1rem;
+}
+
+.contenedorQuantity{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgb(166, 206, 57);
+}
+
+.itemQuantity{
+  color: rgb(0, 82, 61);
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 1rem;
+}
+
+.botonEliminar{
+  margin: 0 1rem;
+}
+
+.contenedorBoton{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boton{
+  border-radius: 1rem;
+  background-color: rgb(166, 206, 57);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  color: rgb(0, 82, 61);
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.boton:hover{
+  background-color: rgb(0, 82, 61);
+  color: rgb(166, 206, 57);
+}
